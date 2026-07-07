@@ -9,6 +9,7 @@
 [![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS%20%7C%20Windows-lightgrey)](#)
 [![Powered by yt-dlp](https://img.shields.io/badge/Powered_by-yt--dlp-ff69b4.svg)](https://github.com/yt-dlp/yt-dlp)
 
+<pre><code>
 ╭──────────────────────────────────────╮
 │                                      │
 │  ███████╗  █████╗ ████████╗██╗   ██╗ │
@@ -19,6 +20,7 @@
 │  ╚══════╝ ╚═╝  ╚═╝   ╚═╝    ╚═════╝  │
 │                                      │
 ╰──────────────────────────────────────╯
+</code></pre>
 
 *A modern, interactive terminal application built for power users.*
 
@@ -131,11 +133,6 @@ Contributions make the open-source community an amazing place to learn, inspire,
 5. Open a Pull Request
 
 ---
-
-## 📄 License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
 ---
 <div align="center">
 <i>Built with ❤️ for the Open Source Community.</i>
