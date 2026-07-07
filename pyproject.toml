@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "satube"
+version = "1.0.0"
+description = "A fast, beautiful, and interactive terminal-based media downloader."
+authors = [
+    {name = "SAGAR", email = "princesagar7155@gmail.com"}
+]
+dependencies = [
+    "typer[all]>=0.9.0",
+    "rich>=13.0.0",
+    "questionary>=2.0.0",
+    "yt-dlp>=2024.0.0",
+    "platformdirs>=4.0.0",
+    "requests>=2.31.0"
+]
+requires-python = ">=3.12"
+readme = "README.md"
+license = {file = "LICENSE"}
+
+[project.scripts]
+satube = "satube.cli:app"
+
+[tool.setuptools]
+packages = ["satube", "satube.commands"]
