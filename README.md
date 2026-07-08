@@ -56,21 +56,134 @@ Before installing, ensure your system has the following dependencies:
 
 ## 🚀 Installation
 
-We provide a smart installation script that detects your Linux distribution (Arch, Debian/Ubuntu, Fedora) and automatically handles the heavy lifting, including system dependencies and `pipx` environment creation.
+SATube supports **Linux**, **macOS**, and **Windows**.
 
-1. Clone the repository
+> **Requirements**
+>
+> - Python 3.12+
+> - FFmpeg
+> - pipx (recommended)
+
+---
+
+### 🐧 Linux
+
+The installer automatically detects your distribution (Arch, Debian/Ubuntu, Fedora, etc.) and installs the required dependencies.
+
+```bash
 git clone https://github.com/sagarlamon/SATube.git
 cd SATube
 
-2. Make the installer executable
 chmod +x install.sh
-
-3. Run the installer
 ./install.sh
+```
 
-*(Note: If you just installed `pipx` for the first time, you may need to restart your terminal or run `source ~/.bashrc` before the `satube` command becomes available).*
+After installation, verify everything is working:
+
+```bash
+satube --version
+```
+
+Launch SATube:
+
+```bash
+satube
+```
 
 ---
+
+### 🍎 macOS
+
+Install dependencies:
+
+```bash
+brew install ffmpeg pipx
+pipx ensurepath
+```
+
+Clone and install:
+
+```bash
+git clone https://github.com/sagarlamon/SATube.git
+cd SATube
+
+pipx install .
+```
+
+Verify installation:
+
+```bash
+satube --version
+```
+
+Launch:
+
+```bash
+satube
+```
+
+---
+
+### 🪟 Windows
+
+Install FFmpeg:
+
+```powershell
+winget install -e --id Gyan.FFmpeg
+```
+
+Install pipx:
+
+```powershell
+python -m pip install --user pipx
+pipx ensurepath
+```
+
+Restart PowerShell (or Command Prompt), then install SATube:
+
+```powershell
+git clone https://github.com/sagarlamon/SATube.git
+cd SATube
+
+pipx install .
+```
+
+Verify installation:
+
+```powershell
+satube --version
+```
+
+Launch:
+
+```powershell
+satube
+```
+
+---
+
+## 🔄 Updating
+
+If SATube was installed using **pipx**, updating is simple:
+
+```bash
+pipx upgrade satube
+```
+
+Or update directly from source:
+
+```bash
+git pull
+pipx install . --force
+```
+
+---
+
+## ❌ Uninstall
+
+```bash
+pipx uninstall satube
+```
 
 ## 💻 Usage
 
@@ -133,6 +246,11 @@ Contributions make the open-source community an amazing place to learn, inspire,
 5. Open a Pull Request
 
 ---
+
+## 📄 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
 ---
 <div align="center">
 <i>Built with ❤️ for the Open Source Community.</i>
